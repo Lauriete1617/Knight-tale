@@ -10,5 +10,5 @@ Aventura em pixel art com foco em combate e narrativa divertida, satirizando cli
 
 ## 👥 Equipe
 - Laura — Programação geral, game design, artes de cenários, coordenação de projeto;
-- Marilu/Maria Luísa — Design de personagens, roteiro;
+- Marilu/Maria Luiza — Design de personagens, roteiro;
 - Eric/Nyld — Worldbuilding, roteiro, edição de áudio;
