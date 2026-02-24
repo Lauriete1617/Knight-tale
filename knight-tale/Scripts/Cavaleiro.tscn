@@ -1,43 +1,43 @@
 [gd_scene load_steps=15 format=3 uid="uid://b2hjgwgidn8ei"]
 
-[ext_resource type="Texture2D" uid="uid://bfsnnkolipoh2" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com espada.png" id="1_dh8he"]
-[ext_resource type="Script" uid="uid://dgpbbs0mvhdnt" path="res://cavaleiro.gd" id="1_vd1ia"]
-[ext_resource type="Texture2D" uid="uid://b22dtpor22p4j" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Parado com espada.png" id="2_vd1ia"]
+[ext_resource type="Script" uid="uid://dgpbbs0mvhdnt" path="res://Scripts/cavaleiro.gd" id="1_007kv"]
+[ext_resource type="Texture2D" uid="uid://8klaa7wloin7" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com espada.png" id="2_bifjb"]
+[ext_resource type="Texture2D" uid="uid://4iprdvp5kf5w" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Parado com espada.png" id="3_26f4x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_70ekj"]
-atlas = ExtResource("1_dh8he")
+atlas = ExtResource("2_bifjb")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wkwnt"]
-atlas = ExtResource("1_dh8he")
+atlas = ExtResource("2_bifjb")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e6m4x"]
-atlas = ExtResource("1_dh8he")
+atlas = ExtResource("2_bifjb")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ocvry"]
-atlas = ExtResource("1_dh8he")
+atlas = ExtResource("2_bifjb")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lv1li"]
-atlas = ExtResource("1_dh8he")
+atlas = ExtResource("2_bifjb")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4jg56"]
-atlas = ExtResource("1_dh8he")
+atlas = ExtResource("2_bifjb")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_khlfo"]
-atlas = ExtResource("1_dh8he")
+atlas = ExtResource("2_bifjb")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_72l1k"]
-atlas = ExtResource("2_vd1ia")
+atlas = ExtResource("3_26f4x")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4sden"]
-atlas = ExtResource("2_vd1ia")
+atlas = ExtResource("3_26f4x")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7ft1n"]
@@ -84,7 +84,7 @@ animations = [{
 size = Vector2(16, 38)
 
 [node name="Cavaleiro" type="Node2D"]
-script = ExtResource("1_vd1ia")
+script = ExtResource("1_007kv")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(1, 0)
