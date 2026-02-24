@@ -1,0 +1,101 @@
+[gd_scene load_steps=15 format=3 uid="uid://b2hjgwgidn8ei"]
+
+[ext_resource type="Texture2D" uid="uid://bfsnnkolipoh2" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com espada.png" id="1_dh8he"]
+[ext_resource type="Script" uid="uid://dgpbbs0mvhdnt" path="res://cavaleiro.gd" id="1_vd1ia"]
+[ext_resource type="Texture2D" uid="uid://b22dtpor22p4j" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Parado com espada.png" id="2_vd1ia"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70ekj"]
+atlas = ExtResource("1_dh8he")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkwnt"]
+atlas = ExtResource("1_dh8he")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6m4x"]
+atlas = ExtResource("1_dh8he")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocvry"]
+atlas = ExtResource("1_dh8he")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lv1li"]
+atlas = ExtResource("1_dh8he")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jg56"]
+atlas = ExtResource("1_dh8he")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khlfo"]
+atlas = ExtResource("1_dh8he")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72l1k"]
+atlas = ExtResource("2_vd1ia")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sden"]
+atlas = ExtResource("2_vd1ia")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ft1n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70ekj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkwnt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6m4x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocvry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lv1li")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jg56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khlfo")
+}],
+"loop": true,
+"name": &"Caminhando com espada",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72l1k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sden")
+}],
+"loop": true,
+"name": &"Parado com espada",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dese7"]
+size = Vector2(16, 38)
+
+[node name="Cavaleiro" type="Node2D"]
+script = ExtResource("1_vd1ia")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(13.500001, -14.500003)
+scale = Vector2(1.8437501, 1.90625)
+sprite_frames = SubResource("SpriteFrames_7ft1n")
+animation = &"Caminhando com espada"
+frame_progress = 0.78464276
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(8, -3)
+shape = SubResource("RectangleShape2D_dese7")
