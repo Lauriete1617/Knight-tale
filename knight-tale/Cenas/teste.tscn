@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy8ifv11s1ppn"]
+
+[ext_resource type="PackedScene" uid="uid://e10drvsvc256" path="res://Cenas/cavaleiro.tscn" id="1_ssles"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_40y0r"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("WorldBoundaryShape2D_40y0r")
+
+[node name="Cavaleiro" parent="." instance=ExtResource("1_ssles")]
+position = Vector2(-4, -24)
+
+[node name="Camera2D" type="Camera2D" parent="Cavaleiro"]
+position = Vector2(-21, -158)
