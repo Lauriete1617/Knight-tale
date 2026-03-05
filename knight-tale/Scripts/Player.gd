@@ -34,6 +34,7 @@ func _physics_process(delta: float) -> void:
 	#processo velocidade*gravidade
 	if direção:
 		velocity.x = direção * velocidade
+		move_and_slide()
 	
 	if not is_on_floor():
 		velocity.y += delta*gravidade
