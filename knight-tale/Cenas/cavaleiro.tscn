@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://e10drvsvc256"]
 
-[ext_resource type="Script" uid="uid://dgpbbs0mvhdnt" path="res://Scripts/Player.gd" id="1_ocm2n"]
+[ext_resource type="Script" uid="uid://y5vcv0pimefe" path="res://Scripts/Player.gd" id="1_ftare"]
 [ext_resource type="Texture2D" uid="uid://8klaa7wloin7" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com espada.png" id="2_0n8qq"]
 [ext_resource type="Texture2D" uid="uid://4iprdvp5kf5w" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Parado com espada.png" id="3_5uwnm"]
 
@@ -84,7 +84,7 @@ animations = [{
 size = Vector2(16, 38)
 
 [node name="Cavaleiro" type="CharacterBody2D"]
-script = ExtResource("1_ocm2n")
+script = ExtResource("1_ftare")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(13.500001, -14.500003)

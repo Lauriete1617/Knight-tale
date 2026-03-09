@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Knight Tale"
-run/main_scene="uid://dy8ifv11s1ppn"
+run/main_scene="uid://dy86vj6stysmg"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
