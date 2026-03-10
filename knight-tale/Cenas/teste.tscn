@@ -12,7 +12,7 @@
 shape = SubResource("WorldBoundaryShape2D_misj8")
 
 [node name="Cavaleiro" parent="." instance=ExtResource("1_wcoih")]
-position = Vector2(-43, -25)
+position = Vector2(-44, -111)
 
-[node name="Camera2D" type="Camera2D" parent="Cavaleiro"]
-position = Vector2(43, 25)
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, -86)
