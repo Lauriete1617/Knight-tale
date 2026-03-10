@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://e10drvsvc256"]
+[gd_scene load_steps=16 format=3 uid="uid://e10drvsvc256"]
 
 [ext_resource type="Script" uid="uid://y5vcv0pimefe" path="res://Scripts/Player.gd" id="1_ftare"]
 [ext_resource type="Texture2D" uid="uid://8klaa7wloin7" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com espada.png" id="2_0n8qq"]
@@ -83,6 +83,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1dck"]
 size = Vector2(16, 38)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftare"]
+size = Vector2(20, 38)
+
 [node name="Cavaleiro" type="CharacterBody2D"]
 script = ExtResource("1_ftare")
 
@@ -94,5 +97,10 @@ animation = &"Caminhando com espada"
 autoplay = "Parado com espada"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(8, -3)
+position = Vector2(8, -3.000001)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_v1dck")
+
+[node name="espada" type="CollisionShape2D" parent="."]
+position = Vector2(37, -3)
+shape = SubResource("RectangleShape2D_ftare")
