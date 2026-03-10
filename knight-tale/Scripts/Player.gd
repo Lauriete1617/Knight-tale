@@ -1,7 +1,9 @@
 extends CharacterBody2D
-@onready var animação: AnimatedSprite2D = $AnimatedSprite2D
-@onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
-@onready var espada: CollisionShape2D = $espada
+@onready var container: Node2D = $Container
+@onready var animação: AnimatedSprite2D = $Container/AnimatedSprite2D
+@onready var espada: Area2D = $Container/Espada
+@onready var ataque: CollisionShape2D = $Container/Espada/Ataque
+
 
 const velocidade = 300.0
 const velocidade_pulo = -400.0
@@ -23,13 +25,11 @@ func _physics_process(delta: float) -> void:
 	if direção !=0:
 		velocity.x = direção * velocidade
 		animação.play("Caminhando com espada")
-		if direção > 0:
-			animação.flip_h = false
-		elif direção < 0:
-			animação.flip_h = true
+		
+		container.scale.x = direção
 	else:
 		velocity.x = move_toward(velocity.x, 0, velocidade)
 		animação.play("Parado com espada")
 		
-
+	
 	move_and_slide()
