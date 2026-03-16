@@ -40,14 +40,13 @@ func _physics_process(delta: float) -> void:
 			parado = true
 			andando = false
 			atualizar_animacão()
-	elif not is_on_floor:
+	elif not is_on_floor():
 		if velocity.y > 0:
 			pulando = true
 			atualizar_animacão()
 		elif velocity.y <0:
 			caindo = true
 			atualizar_animacão()
-	
 	move_and_slide()
 
 func atualizar_animacão():
