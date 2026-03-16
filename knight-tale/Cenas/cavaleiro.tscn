@@ -1,8 +1,12 @@
-[gd_scene load_steps=16 format=3 uid="uid://e10drvsvc256"]
+[gd_scene load_steps=47 format=3 uid="uid://e10drvsvc256"]
 
 [ext_resource type="Script" uid="uid://y5vcv0pimefe" path="res://Scripts/Player.gd" id="1_ftare"]
 [ext_resource type="Texture2D" uid="uid://8klaa7wloin7" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com espada.png" id="2_0n8qq"]
 [ext_resource type="Texture2D" uid="uid://4iprdvp5kf5w" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Parado com espada.png" id="3_5uwnm"]
+[ext_resource type="Texture2D" uid="uid://cverqlkwfgars" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando sem espada.png" id="3_gyr1a"]
+[ext_resource type="Texture2D" uid="uid://snkj1767sgej" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Caindo com espada.png" id="4_k2yu3"]
+[ext_resource type="Texture2D" uid="uid://264iagfkm210" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Parado sem espada.png" id="5_k2yu3"]
+[ext_resource type="Texture2D" uid="uid://s0ec5ysqtp7y" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Pulando com espada.png" id="6_av0g7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_70ekj"]
 atlas = ExtResource("2_0n8qq")
@@ -32,6 +36,86 @@ region = Rect2(0, 64, 32, 32)
 atlas = ExtResource("2_0n8qq")
 region = Rect2(0, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0qrf"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v528o"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stmuu"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqk3f"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdfjh"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi2ky"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g71fl"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6tw87"]
+atlas = ExtResource("3_gyr1a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_av0g7"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktgtr"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_my2k3"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdot3"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ey8c"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyiqu"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvtv6"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8op6"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4l37"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjp4b"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wth5g"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1mgr"]
+atlas = ExtResource("4_k2yu3")
+region = Rect2(64, 96, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_72l1k"]
 atlas = ExtResource("3_5uwnm")
 region = Rect2(0, 0, 32, 32)
@@ -39,6 +123,34 @@ region = Rect2(0, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_4sden"]
 atlas = ExtResource("3_5uwnm")
 region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48itt"]
+atlas = ExtResource("5_k2yu3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fthg4"]
+atlas = ExtResource("5_k2yu3")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2snrq"]
+atlas = ExtResource("6_av0g7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yv7vy"]
+atlas = ExtResource("6_av0g7")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv134"]
+atlas = ExtResource("6_av0g7")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxnw6"]
+atlas = ExtResource("6_av0g7")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea2i2"]
+atlas = ExtResource("6_av0g7")
+region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qc5k0"]
 animations = [{
@@ -65,8 +177,78 @@ animations = [{
 "texture": SubResource("AtlasTexture_khlfo")
 }],
 "loop": true,
-"name": &"Caminhando com espada",
+"name": &"Andando com espada",
 "speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0qrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v528o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_stmuu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqk3f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdfjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi2ky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g71fl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6tw87")
+}],
+"loop": true,
+"name": &"Andando sem espada",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_av0g7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktgtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_my2k3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdot3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ey8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyiqu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvtv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8op6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4l37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjp4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wth5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q1mgr")
+}],
+"loop": true,
+"name": &"Caindo com espada",
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -78,6 +260,37 @@ animations = [{
 "loop": true,
 "name": &"Parado com espada",
 "speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48itt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fthg4")
+}],
+"loop": true,
+"name": &"Parado sem espada",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2snrq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yv7vy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hv134")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxnw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ea2i2")
+}],
+"loop": true,
+"name": &"Pulo com espada",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ftare"]
@@ -92,11 +305,12 @@ script = ExtResource("1_ftare")
 [node name="Container" type="Node2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Container"]
-position = Vector2(5.000001, -12)
+position = Vector2(5.000001, -11)
 scale = Vector2(1.8437501, 1.90625)
 sprite_frames = SubResource("SpriteFrames_qc5k0")
-animation = &"Caminhando com espada"
+animation = &"Parado com espada"
 autoplay = "Parado com espada"
+frame_progress = 0.22324336
 
 [node name="Espada" type="Area2D" parent="Container"]
 
