@@ -52,7 +52,7 @@ func atualizar_animacão():
 				animação.play("Andando com espada")
 			elif espadaItem == false:
 				animação.play("Andando sem espada")
-			return
+			
 		
 		else:
 			if sinal == animação.animation_finished:
@@ -61,7 +61,10 @@ func atualizar_animacão():
 				animação.play("Parado com espada")
 			elif espadaItem == false:
 				animação.play("Parado sem espada")
-			return
+			
+		
+		if Input.is_action_just_pressed("Ataque leve"):
+			animação.play("Ataque para baixo")
 	else:
 		if velocity.y < 0:
 			if espadaItem == true:
