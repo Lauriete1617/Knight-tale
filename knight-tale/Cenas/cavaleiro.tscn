@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://e10drvsvc256"]
+[gd_scene load_steps=45 format=3 uid="uid://e10drvsvc256"]
 
 [ext_resource type="Script" uid="uid://y5vcv0pimefe" path="res://Scripts/Player.gd" id="1_ftare"]
 [ext_resource type="Texture2D" uid="uid://8klaa7wloin7" path="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com espada.png" id="2_0n8qq"]
@@ -132,14 +132,6 @@ region = Rect2(0, 0, 32, 32)
 atlas = ExtResource("5_k2yu3")
 region = Rect2(0, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2snrq"]
-atlas = ExtResource("6_av0g7")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yv7vy"]
-atlas = ExtResource("6_av0g7")
-region = Rect2(32, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_hv134"]
 atlas = ExtResource("6_av0g7")
 region = Rect2(64, 0, 32, 32)
@@ -246,7 +238,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_q1mgr")
 }],
-"loop": true,
+"loop": false,
 "name": &"Caindo com espada",
 "speed": 3.0
 }, {
@@ -274,12 +266,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2snrq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yv7vy")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_hv134")
 }, {
 "duration": 1.0,
@@ -288,7 +274,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ea2i2")
 }],
-"loop": true,
+"loop": false,
 "name": &"Pulo com espada",
 "speed": 5.0
 }]
@@ -308,9 +294,9 @@ script = ExtResource("1_ftare")
 position = Vector2(5.000001, -11)
 scale = Vector2(1.8437501, 1.90625)
 sprite_frames = SubResource("SpriteFrames_qc5k0")
-animation = &"Parado com espada"
+animation = &"Andando com espada"
 autoplay = "Parado com espada"
-frame_progress = 0.22324336
+frame_progress = 0.923382
 
 [node name="Espada" type="Area2D" parent="Container"]
 

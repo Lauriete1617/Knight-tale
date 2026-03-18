@@ -6,10 +6,7 @@ extends CharacterBody2D
 @onready var ataque: CollisionShape2D = $Container/Espada/Ataque
 
 var espadaItem = true
-var andando = false
-var pulando = false
-var parado = false
-var caindo = false
+var sinal = null
 
 const velocidade = 300.0
 const velocidade_pulo = -400.0
@@ -27,49 +24,50 @@ func _physics_process(delta: float) -> void:
 	
 	# Pega imput
 	var direção := Input.get_axis("esquerda", "direita")
+	move_and_slide()
 	
 	if is_on_floor():
 		if direção !=0: #caminha
 			velocity.x = direção * velocidade
 			container.scale.x = direção
-			parado = false
-			andando = true
 			atualizar_animacão()
 		else: #parado
 			velocity.x = move_toward(velocity.x, 0, velocidade)
-			parado = true
-			andando = false
 			atualizar_animacão()
-	elif not is_on_floor():
-		if velocity.y > 0:
-			pulando = true
-			atualizar_animacão()
-		elif velocity.y <0:
-			caindo = true
-			atualizar_animacão()
-	move_and_slide()
+	else:
+		if direção !=0: #caminha
+			velocity.x = direção * velocidade
+			container.scale.x = direção
+		atualizar_animacão()
+	
+
 
 func atualizar_animacão():
-	if andando:
-		if espadaItem == true:
-			animação.play("Andando com espada")
-		elif espadaItem == false:
-			animação.play("Andando sem espada")
-		return
-	
-	if parado:
-		if espadaItem == true:
-			animação.play("Parado com espada")
-		elif espadaItem == false:
-			animação.play("Parado sem espada")
-		return
-	
-	if pulando:
-		if espadaItem == true:
-			animação.play("Pulo com espada")
-		return
-	
-	if caindo:
-		if espadaItem == true:
-			animação.play("Caindo com espada")
-		return
+	if is_on_floor():
+		if velocity.x != 0:
+			sinal = null
+			if espadaItem == true:
+				animação.play("Andando com espada")
+			elif espadaItem == false:
+				animação.play("Andando sem espada")
+			return
+		
+		else:
+			if sinal == animação.animation_finished:
+				await sinal
+			if espadaItem == true:
+				animação.play("Parado com espada")
+			elif espadaItem == false:
+				animação.play("Parado sem espada")
+			return
+	else:
+		if velocity.y < 0:
+			if espadaItem == true:
+				animação.play("Pulo com espada")
+			return
+		
+		if velocity.y > 0 :
+			if espadaItem == true:
+				animação.play("Caindo com espada")
+				sinal = animação.animation_finished
+			return
