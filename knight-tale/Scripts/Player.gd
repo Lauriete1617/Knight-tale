@@ -64,10 +64,14 @@ func atualizar_animacão():
 		if velocity.y < 0:
 			if espadaItem == true:
 				animação.play("Pulo com espada")
+			else:
+				animação.play("Pulo sem espada")
 			return
 		
 		if velocity.y > 0 :
 			if espadaItem == true:
 				animação.play("Caindo com espada")
-				sinal = animação.animation_finished
+			else:
+				animação.play("Caindo sem espada")
+			sinal = animação.animation_finished
 			return
