@@ -1,18 +1,21 @@
 extends CharacterBody2D
 
-@onready var container: Node2D = $Container
+#Chamando nós que vamos usar no script
 @onready var animação: AnimatedSprite2D = $Container/AnimatedSprite2D
 @onready var espada: Area2D = $Container/Espada
 @onready var ataque: CollisionShape2D = $Container/Espada/Ataque
+@onready var container: Node2D = $Container
 
+# Variáveis pra sinais
 var espadaItem = true
 var sinal = null
 
+# Variáveis pra física
 const velocidade = 300.0
 const velocidade_pulo = -400.0
 const gravidade = 900
 
-
+# Função que roda o tempo todo da cena, focado na parte física
 func _physics_process(delta: float) -> void:
 	# gravidade
 	if not is_on_floor():
@@ -39,9 +42,8 @@ func _physics_process(delta: float) -> void:
 			velocity.x = direção * velocidade
 			container.scale.x = direção
 		atualizar_animacão()
-	
 
-
+# Gerencia as animações pra evitar que entrem em conflito
 func atualizar_animacão():
 	if is_on_floor():
 		if velocity.x != 0:
