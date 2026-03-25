@@ -1,0 +1,32 @@
+# Relatório script player #
+
+**Marilu** | **22/03/22**
+
+**No script geral:**
+
+- Introduzi uma variável booleana `genero` para chamar as animações de Cavaleiro ou Cavaleira usando ifs dentro da função `atualizar_animaçoes`.
+  - Ex:
+    ```
+     if genero == false:
+       animation.play("animação do cavaleiro")
+     else:
+       animation.play("animação da cavaleira")
+    ```
+- Melhorei um pouco o sistema de sinal das animações para ficar mais simples. Só boas práticas de programação.
+- Fiz um sistema animações de ataque com sinal de controle e probabilidade.
+
+---
+
+**No sistema de animação de ataque:**
+
+- Mudei o input do botão de ataque de `is_just_pressed` para `is_pressed` para que o player não tenha que ficar espamando o botão.
+- Fiz um sistema de sinal (variável `sinalAtaque`) separado do sinal de andar/idle (`variável sinal`) para impedir que a animação não interrompa e resete a cada input.
+- Fiz 50% de chance do ataque leve ser para baixo ou para cima. Isso é só para estética.
+  - ex:
+    ```
+      var probabilidade = randf()
+      if probabilidade < 0.5:
+        animation.play("Ataque baixo")
+      else:
+        animation.play("Ataque cima")
+    ```
