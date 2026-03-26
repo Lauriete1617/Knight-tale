@@ -24,7 +24,7 @@ const gravidade = 900
 var direção
 var ataque
 
-# Testando discord notificação denovo 2
+# Testando discord notificação denovo 3
 
 # Função que roda o tempo todo da cena, focado na parte física
 func _physics_process(delta: float) -> void:
