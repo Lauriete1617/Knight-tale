@@ -21,7 +21,6 @@ jobs:
               "embeds": [
                 {
                   "title": "📝 Novo Commit",
-                  "content": "<@&1475236924775207013> Novo commit!",
                   "description": "Branch: `${{ github.ref_name }}`",
                   "color": 5814783,
                   "fields": [
@@ -38,6 +37,7 @@ jobs:
                     {
                       "name": "Mensagem do Commit",
                       "value": "${{ github.event.head_commit.message }}",
+                      "content": "<@&1475236924775207013> Novo commit!",
                       "inline": false
                     }
                   ],
