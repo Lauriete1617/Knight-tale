@@ -40,9 +40,7 @@ jobs:
                       "inline": false
                     },
                     {
-                      "name": "Total de Arquivos Alterados",
-                      "value": "${{ join(github.event.head_commit.added) }} adicionados, ${{ join(github.event.head_commit.modified) }} modificados, ${{ join(github.event.head_commit.removed) }} removidos",
-                      "inline": false
+                      "content": "<@&1475236924775207013> Novo commit!",
                     }
                   ],
                   "url": "${{ github.event.head_commit.url }}"
