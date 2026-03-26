@@ -1,55 +1,6 @@
-name: Notificar Discord sobre Commits
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  notify:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Enviar notificação para Discord
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
-          COMMIT_AUTHOR: ${{ github.actor }}
-          COMMIT_URL: ${{ github.event.head_commit.url }}
-          REPO_NAME: ${{ github.repository }}
-          BRANCH_NAME: ${{ github.ref_name }}
-        run: |
-          curl -X POST "$DISCORD_WEBHOOK" \
-            -H "Content-Type: application/json" \
-            -d @- << 'EOF'
-          {
-            "username": "GitHub Bot",
-            "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-            "embeds": [
-              {
-                "title": "📝 Novo Commit",
-                "description": "Branch: $BRANCH_NAME",
-                "color": 5814783,
-                "fields": [
-                  {
-                    "name": "Autor",
-                    "value": "$COMMIT_AUTHOR",
-                    "inline": true
-                  },
-                  {
-                    "name": "Repositório",
-                    "value": "$REPO_NAME",
-                    "inline": true
-                  },
-                  {
-                    "name": "Mensagem do Commit",
-                    "value": "$COMMIT_MESSAGE",
-                    "inline": false
-                  }
-                ],
-                "url": "$COMMIT_URL"
-              }
-            ]
-          }
-          EOF
+- name: Test Webhook
+  run: |
+    echo "Webhook URL length: ${#DISCORD_WEBHOOK}"
+    echo "Webhook starts with: $(echo $DISCORD_WEBHOOK | cut -c1-50)"
+  env:
+    DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
