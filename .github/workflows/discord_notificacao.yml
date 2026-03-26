@@ -3,7 +3,7 @@ name: Notificar Discord sobre Commits
 on:
   push:
     branches:
-      - main  # Mude para a branch que deseja monitorar
+      - main
 
 jobs:
   notify:
@@ -16,6 +16,7 @@ jobs:
           curl -X POST ${{ secrets.DISCORD_WEBHOOK }} \
             -H "Content-Type: application/json" \
             -d '{
+              "content": "<@&ROLE_ID> Novo commit!",
               "username": "GitHub Bot",
               "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
               "embeds": [
@@ -32,12 +33,11 @@ jobs:
                     {
                       "name": "Repositório",
                       "value": "${{ github.repository }}",
-                      "inline": false
+                      "inline": true
                     },
                     {
                       "name": "Mensagem do Commit",
                       "value": "${{ github.event.head_commit.message }}",
-                      "content": "<@&1475236924775207013> Novo commit!",
                       "inline": false
                     }
                   ],
