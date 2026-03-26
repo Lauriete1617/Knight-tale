@@ -40,9 +40,7 @@ jobs:
                       "inline": false
                     },
                     {
-                      "name": "Arquivos Alterados",
-                      "value": "${{ github.event.head_commit.modified_size }} modificados",
-                      "inline": true
+                      "content": "<@&1475236924775207013> Novo commit!",
                     }
                   ],
                   "url": "${{ github.event.head_commit.url }}"
