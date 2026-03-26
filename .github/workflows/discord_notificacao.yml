@@ -21,6 +21,7 @@ jobs:
               "embeds": [
                 {
                   "title": "📝 Novo Commit",
+                  "content": "<@&1475236924775207013> Novo commit!",
                   "description": "Branch: `${{ github.ref_name }}`",
                   "color": 5814783,
                   "fields": [
