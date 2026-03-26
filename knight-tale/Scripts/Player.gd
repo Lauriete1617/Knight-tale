@@ -24,7 +24,7 @@ const gravidade = 900
 var direção
 var ataque
 
-#teste 3
+#teste 4
 
 # Função que roda o tempo todo da cena, focado na parte física
 func _physics_process(delta: float) -> void:
