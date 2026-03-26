@@ -33,7 +33,7 @@ jobs:
                     {
                       "name": "Repositório",
                       "value": "${{ github.repository }}",
-                      "inline": false
+                      "inline": true
                     },
                     {
                       "name": "Mensagem do Commit",
