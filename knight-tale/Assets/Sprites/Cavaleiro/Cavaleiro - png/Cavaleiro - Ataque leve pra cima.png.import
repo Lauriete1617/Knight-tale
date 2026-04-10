@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm7lh308cwa6l"
-path="res://.godot/imported/Cavaleiro - Ataque pra baixo.png-72fb9050efc605fc9e6b086c0f848aa8.ctex"
+uid="uid://s8rdhgsr3og"
+path="res://.godot/imported/Cavaleiro - Ataque leve pra cima.png-90b78179886ecb352b6e4e24abd07e8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Ataque pra baixo.png"
-dest_files=["res://.godot/imported/Cavaleiro - Ataque pra baixo.png-72fb9050efc605fc9e6b086c0f848aa8.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Ataque leve pra cima.png"
+dest_files=["res://.godot/imported/Cavaleiro - Ataque leve pra cima.png-90b78179886ecb352b6e4e24abd07e8e.ctex"]
 
 [params]
 

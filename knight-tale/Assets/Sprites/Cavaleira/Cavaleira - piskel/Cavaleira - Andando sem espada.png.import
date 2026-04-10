@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n6uewrvi8t02"
-path="res://.godot/imported/Cavaleiro - Pegando escudo.png-8d0317942c220310f34f5c977eeed21f.ctex"
+uid="uid://cglh3q5lnmyyi"
+path="res://.godot/imported/Cavaleira - Andando sem espada.png-e398082f0bee7e9929987c200d2374eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Pegando escudo.png"
-dest_files=["res://.godot/imported/Cavaleiro - Pegando escudo.png-8d0317942c220310f34f5c977eeed21f.ctex"]
+source_file="res://Assets/Sprites/Cavaleira/Cavaleira - Andando sem espada.png"
+dest_files=["res://.godot/imported/Cavaleira - Andando sem espada.png-e398082f0bee7e9929987c200d2374eb.ctex"]
 
 [params]
 

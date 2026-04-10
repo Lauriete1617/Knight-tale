@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
 #Chamando nós que vamos usar no script
-@onready var animação: AnimatedSprite2D = $Container/AnimatedSprite2D
+@onready var corpo: AnimatedSprite2D = $Container/Corpo
+@onready var items: AnimatedSprite2D = $Container/Items
 @onready var espada: Area2D = $Container/Espada
 @onready var ataqueArea: CollisionShape2D = $Container/Espada/Ataque
 @onready var container: Node2D = $Container
@@ -10,8 +11,10 @@ extends CharacterBody2D
 # False = Cavaleiro, True = Cavaleira
 var genero = false
 
+#Variável items
+var iventario = ["none", "espada", "escudo", "chá"]
+
 # Variáveis pra sinais
-var espadaItem = true
 var sinal = null
 var sinalAtaque = null
 
@@ -24,14 +27,13 @@ const gravidade = 900
 var direção
 var ataque
 
-#teste 5
 
 # Função que roda o tempo todo da cena, focado na parte física
 func _physics_process(delta: float) -> void:
 	# gravidade
 	if not is_on_floor():
 		velocity.y += gravidade * delta
-
+	iventario[1]
 	#Pulo.
 	if Input.is_action_just_pressed("pulo") and is_on_floor():
 		velocity.y = velocidade_pulo
@@ -68,52 +70,46 @@ func atualizar_animacão():
 		
 		if probabilidade < 0.5:
 			if genero == false:
-				animação.play("Ataque para baixo")
-				print("ataque baixo")
+				corpo.play("Ataque para baixo")
 		else:
 			if genero == false:
-				animação.play("Ataque para cima")
-				print("ataque cima")
-		
-		await animação.animation_finished
+				corpo.play("Ataque para cima")
+		await corpo.animation_finished
 		sinalAtaque = false
 	
-	if is_on_floor() and not sinalAtaque: # Andando
+	if is_on_floor() and not sinalAtaque: ## Andando
 		if velocity.x != 0:
 			sinal = null
-			if espadaItem == true:
-				if genero == false:
-					animação.play("Andando com espada")
-			elif espadaItem == false:
-				if genero == false:
-					animação.play("Andando sem espada")
+			if genero == false:
+				corpo.play("Andando")
+				if  iventario == "espada":
+					items.play("Espada - andando")
+					items.frame = corpo.frame
 		
-		else: # Parado
+		else: ## Parado
 			if sinal == true:
-				await animação.animation_finished
+				await corpo.animation_finished
 			
-			if espadaItem == true:
-				if genero == false:
-					animação.play("Parado com espada")
-			elif espadaItem == false:
-				if genero == false:
-					animação.play("Parado sem espada")
+			if genero == false:
+				corpo.play("Parado")
+				if iventario == "espada":
+					items.play("Espada - parado")
+					items.frame = corpo.frame
 	
-	else: # Pulo e queda
+	else: ## Pulo e queda
+		items.play("default")
 		if velocity.y < 0:
-			if espadaItem == true:
-				if genero == false:
-					animação.play("Pulo com espada")
-			if espadaItem == false:
-				if genero == false:
-					animação.play("Pulo sem espada")
+			if genero == false:
+				corpo.play("Pulo com espada")
+			if genero == false:
+				corpo.play("Pulo sem espada")
 			return
 		
 		if velocity.y > 0 :
-			if espadaItem == true:
+			if iventario:
 				if genero == false:
-					animação.play("Caindo com espada")
+					corpo.play("Caindo com espada")
 			else:
 				if genero == false:
-					animação.play("Caindo sem espada")
+					corpo.play("Caindo sem espada")
 			sinal = true

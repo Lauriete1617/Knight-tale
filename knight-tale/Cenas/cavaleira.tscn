@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://vxwadbfet67"]
+
+[ext_resource type="Script" uid="uid://y5vcv0pimefe" path="res://Scripts/Player.gd" id="1_ocyt6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftare"]
+size = Vector2(20, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1dck"]
+size = Vector2(16, 38)
+
+[node name="cavaleira" type="CharacterBody2D"]
+script = ExtResource("1_ocyt6")
+
+[node name="Container" type="Node2D" parent="."]
+
+[node name="Espada" type="Area2D" parent="Container"]
+
+[node name="Ataque" type="CollisionShape2D" parent="Container/Espada"]
+position = Vector2(26, -1)
+shape = SubResource("RectangleShape2D_ftare")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_v1dck")

@@ -1,0 +1,104 @@
+[gd_scene load_steps=15 format=3 uid="uid://c04pvpeexav2r"]
+
+[ext_resource type="Script" uid="uid://up5wytrfi5xg" path="res://Cenas/espantalho.gd" id="1_kvvh1"]
+[ext_resource type="Texture2D" uid="uid://cx4l57ktj6ywb" path="res://Assets/Sprites/Mobs/Espantalho/Espantalho - andando.png" id="2_m5uk7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06un5"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yyhd"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4ryo"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oro2g"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ca8yq"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0f8l"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d267v"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6mic"]
+atlas = ExtResource("2_m5uk7")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m5uk7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06un5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yyhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4ryo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oro2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ca8yq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0f8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d267v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6mic")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftare"]
+size = Vector2(20, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1dck"]
+size = Vector2(16, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iak2v"]
+size = Vector2(137, 63)
+
+[node name="Espantalho" type="CharacterBody2D"]
+script = ExtResource("1_kvvh1")
+
+[node name="Container" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Container"]
+position = Vector2(0, 0.5)
+scale = Vector2(1, 0.96875)
+sprite_frames = SubResource("SpriteFrames_m5uk7")
+
+[node name="Espada" type="Area2D" parent="Container"]
+
+[node name="Ataque" type="CollisionShape2D" parent="Container/Espada"]
+position = Vector2(26, 4.5)
+shape = SubResource("RectangleShape2D_ftare")
+
+[node name="corpo" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_v1dck")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Campo de visão" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, -14.5)
+shape = SubResource("RectangleShape2D_iak2v")
