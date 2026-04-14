@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm7lh308cwa6l"
-path="res://.godot/imported/Cavaleiro - Ataque leve pra baixo.png-4706873323604436baf509a9ebadf0fe.ctex"
+path="res://.godot/imported/Cavaleiro - Ataque leve pra baixo.png-400bfde1eb2f93ebccee1c82adfea95e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Ataque leve pra baixo.png"
-dest_files=["res://.godot/imported/Cavaleiro - Ataque leve pra baixo.png-4706873323604436baf509a9ebadf0fe.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Ataque leve pra baixo.png"
+dest_files=["res://.godot/imported/Cavaleiro - Ataque leve pra baixo.png-400bfde1eb2f93ebccee1c82adfea95e.ctex"]
 
 [params]
 

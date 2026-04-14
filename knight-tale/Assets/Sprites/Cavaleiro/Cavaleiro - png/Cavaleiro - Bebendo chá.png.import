@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfy8g5i342ga0"
-path="res://.godot/imported/Cavaleiro - Bebendo chá.png-0c48a6938403b24a53ccc9364535550e.ctex"
+path="res://.godot/imported/Cavaleiro - Bebendo chá.png-3e8fea500a89242f63563b0dd1854e6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Bebendo chá.png"
-dest_files=["res://.godot/imported/Cavaleiro - Bebendo chá.png-0c48a6938403b24a53ccc9364535550e.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Bebendo chá.png"
+dest_files=["res://.godot/imported/Cavaleiro - Bebendo chá.png-3e8fea500a89242f63563b0dd1854e6c.ctex"]
 
 [params]
 

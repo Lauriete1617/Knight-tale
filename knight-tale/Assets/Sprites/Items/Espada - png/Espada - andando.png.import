@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpnx2oqitey66"
-path="res://.godot/imported/Espada - andando.png-440135077235f554f98f955b04ce8337.ctex"
+path="res://.godot/imported/Espada - andando.png-6c58601e3ad07d93051483b1ca1ca309.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Items/Espada - andando.png"
-dest_files=["res://.godot/imported/Espada - andando.png-440135077235f554f98f955b04ce8337.ctex"]
+source_file="res://Assets/Sprites/Items/Espada - png/Espada - andando.png"
+dest_files=["res://.godot/imported/Espada - andando.png-6c58601e3ad07d93051483b1ca1ca309.ctex"]
 
 [params]
 

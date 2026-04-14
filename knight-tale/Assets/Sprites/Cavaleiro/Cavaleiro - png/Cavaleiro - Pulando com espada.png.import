@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s0ec5ysqtp7y"
-path="res://.godot/imported/Cavaleiro - Pulando com espada.png-4cf7d003e561fb0d8c8d2da7535edf96.ctex"
+path="res://.godot/imported/Cavaleiro - Pulando com espada.png-ef4682096570069e1a2dd38935b73ddf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Pulando com espada.png"
-dest_files=["res://.godot/imported/Cavaleiro - Pulando com espada.png-4cf7d003e561fb0d8c8d2da7535edf96.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Pulando com espada.png"
+dest_files=["res://.godot/imported/Cavaleiro - Pulando com espada.png-ef4682096570069e1a2dd38935b73ddf.ctex"]
 
 [params]
 

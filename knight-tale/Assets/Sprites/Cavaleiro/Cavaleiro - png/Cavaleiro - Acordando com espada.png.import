@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cufbh0uld53ww"
-path="res://.godot/imported/Cavaleiro - Acordando com espada.png-ae7720da392d362d6a3104891f84d721.ctex"
+path="res://.godot/imported/Cavaleiro - Acordando com espada.png-de276e7fb6ad0769534f8998d20cb2a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Acordando com espada.png"
-dest_files=["res://.godot/imported/Cavaleiro - Acordando com espada.png-ae7720da392d362d6a3104891f84d721.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Acordando com espada.png"
+dest_files=["res://.godot/imported/Cavaleiro - Acordando com espada.png-de276e7fb6ad0769534f8998d20cb2a7.ctex"]
 
 [params]
 

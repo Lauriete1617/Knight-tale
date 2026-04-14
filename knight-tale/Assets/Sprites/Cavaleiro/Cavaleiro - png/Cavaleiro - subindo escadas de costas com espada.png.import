@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df4d6bx06cpbv"
-path="res://.godot/imported/Cavaleiro - subindo escadas de costas com espada.png-05ebc65adc3549857085b2835d049bfa.ctex"
+path="res://.godot/imported/Cavaleiro - subindo escadas de costas com espada.png-6d95f1228264e9963a9d218b8a201427.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - subindo escadas de costas com espada.png"
-dest_files=["res://.godot/imported/Cavaleiro - subindo escadas de costas com espada.png-05ebc65adc3549857085b2835d049bfa.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - subindo escadas de costas com espada.png"
+dest_files=["res://.godot/imported/Cavaleiro - subindo escadas de costas com espada.png-6d95f1228264e9963a9d218b8a201427.ctex"]
 
 [params]
 

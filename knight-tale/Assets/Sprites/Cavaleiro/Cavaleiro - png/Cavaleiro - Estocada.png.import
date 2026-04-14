@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1bva0sxhvc85"
-path="res://.godot/imported/Cavaleiro - Estocada.png-49528d6cae16304e65bb01000b4b6aa3.ctex"
+path="res://.godot/imported/Cavaleiro - Estocada.png-c15d50376b65d612a9bf5506ac772895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Estocada.png"
-dest_files=["res://.godot/imported/Cavaleiro - Estocada.png-49528d6cae16304e65bb01000b4b6aa3.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Estocada.png"
+dest_files=["res://.godot/imported/Cavaleiro - Estocada.png-c15d50376b65d612a9bf5506ac772895.ctex"]
 
 [params]
 

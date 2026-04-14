@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwawxrpp0rdcg"
-path="res://.godot/imported/Espada - parado.png-5850022c06a3b533172fb4e69fadd773.ctex"
+path="res://.godot/imported/Espada - parado.png-22589cf5c6a0870dfbbc17c18698fa7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Items/Espada - parado.png"
-dest_files=["res://.godot/imported/Espada - parado.png-5850022c06a3b533172fb4e69fadd773.ctex"]
+source_file="res://Assets/Sprites/Items/Espada - png/Espada - parado.png"
+dest_files=["res://.godot/imported/Espada - parado.png-22589cf5c6a0870dfbbc17c18698fa7f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rghc6rl8qdvj"
-path="res://.godot/imported/Cavaleiro - Usando escudo.png-69f6b4db3d083e7a6fa132d7d1b7b7fe.ctex"
+path="res://.godot/imported/Cavaleiro - Usando escudo.png-dc54dcdf76dbcd380a57b40392f46a39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Usando escudo.png"
-dest_files=["res://.godot/imported/Cavaleiro - Usando escudo.png-69f6b4db3d083e7a6fa132d7d1b7b7fe.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Usando escudo.png"
+dest_files=["res://.godot/imported/Cavaleiro - Usando escudo.png-dc54dcdf76dbcd380a57b40392f46a39.ctex"]
 
 [params]
 

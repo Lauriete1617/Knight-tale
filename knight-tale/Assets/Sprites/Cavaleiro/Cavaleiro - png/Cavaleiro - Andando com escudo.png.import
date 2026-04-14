@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqqvwghvpio57"
-path="res://.godot/imported/Cavaleiro - Andando com escudo.png-5826bbd90f3b746571d5aeb9bacfd172.ctex"
+path="res://.godot/imported/Cavaleiro - Andando com escudo.png-76f25bbba725c6003a4e4521f59227b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Andando com escudo.png"
-dest_files=["res://.godot/imported/Cavaleiro - Andando com escudo.png-5826bbd90f3b746571d5aeb9bacfd172.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Andando com escudo.png"
+dest_files=["res://.godot/imported/Cavaleiro - Andando com escudo.png-76f25bbba725c6003a4e4521f59227b0.ctex"]
 
 [params]
 

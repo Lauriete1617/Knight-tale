@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://c04pvpeexav2r"]
 
-[ext_resource type="Script" uid="uid://up5wytrfi5xg" path="res://Cenas/espantalho.gd" id="1_kvvh1"]
+[ext_resource type="Script" uid="uid://up5wytrfi5xg" path="res://Scripts/espantalho.gd" id="1_kvvh1"]
 [ext_resource type="Texture2D" uid="uid://cx4l57ktj6ywb" path="res://Assets/Sprites/Mobs/Espantalho/Espantalho - andando.png" id="2_m5uk7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_06un5"]

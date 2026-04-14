@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgukbho32vvc"
-path="res://.godot/imported/Cavaleiro - Caindo sem espada.png-60a229270fa9241641dcb26cced9f941.ctex"
+path="res://.godot/imported/Cavaleiro - Caindo sem espada.png-25ed28103b85d36e10d7a1c5e87c8777.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Caindo sem espada.png"
-dest_files=["res://.godot/imported/Cavaleiro - Caindo sem espada.png-60a229270fa9241641dcb26cced9f941.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Caindo sem espada.png"
+dest_files=["res://.godot/imported/Cavaleiro - Caindo sem espada.png-25ed28103b85d36e10d7a1c5e87c8777.ctex"]
 
 [params]
 

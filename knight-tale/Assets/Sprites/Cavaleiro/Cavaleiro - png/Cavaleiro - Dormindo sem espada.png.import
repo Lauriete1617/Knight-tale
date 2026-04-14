@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs48oc6100bfu"
-path="res://.godot/imported/Cavaleiro - Dormindo sem espada.png-9db711981c3514cba15afa78006ed238.ctex"
+path="res://.godot/imported/Cavaleiro - Dormindo sem espada.png-1fa1af3a44e2cf3ab50570908f18fd89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - Dormindo sem espada.png"
-dest_files=["res://.godot/imported/Cavaleiro - Dormindo sem espada.png-9db711981c3514cba15afa78006ed238.ctex"]
+source_file="res://Assets/Sprites/Cavaleiro/Cavaleiro - png/Cavaleiro - Dormindo sem espada.png"
+dest_files=["res://.godot/imported/Cavaleiro - Dormindo sem espada.png-1fa1af3a44e2cf3ab50570908f18fd89.ctex"]
 
 [params]
 
