@@ -32,22 +32,18 @@ var naMão = iventario[1];
 #estados
 var andando
 var parado
-var noAr
+var pulando
+var caindo
+
 # Função que roda o tempo todo da cena, focado na parte física
 func _physics_process(delta: float) -> void:
 	# Sincronização de frames de animações
 	items.frame = corpo.frame
-	
-	# gravidade
-	if not is_on_floor():
-		velocity.y += gravidade * delta
 
-	#Pulo.
-	if Input.is_action_just_pressed("pulo") and is_on_floor():
-		velocity.y = velocidade_pulo
-	
 	# Pega imput
 	direção = Input.get_axis("esquerda", "direita")
+	if Input.is_action_just_pressed("pulo") and is_on_floor():
+		velocity.y = velocidade_pulo
 	ataque = Input.is_action_pressed("Ataque leve")
 	
 	if ataque:
@@ -56,7 +52,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	if is_on_floor():
-		noAr = false
+		pulando = false
+		caindo = false
 		if direção !=0: #caminha
 			parado = false
 			andando = true
@@ -67,7 +64,19 @@ func _physics_process(delta: float) -> void:
 			parado = true
 			velocity.x = move_toward(velocity.x, 0, velocidade)
 	else:
-		noAr = true
+		#Gravidade
+		velocity.y += gravidade * delta
+		
+		andando = false
+		parado = false
+		
+		if velocity.y < 0:
+			pulando = true
+			caindo = false
+		elif velocity.y >= 0:
+			pulando = false
+			caindo = true
+		
 		if direção !=0: #muda direção no ar
 			velocity.x = direção * velocidade
 			container.scale.x = direção
@@ -90,6 +99,23 @@ func atualizar_animacão():
 		await corpo.animation_finished
 		sinalAtaque = false
 	
+	if pulando :
+		if genero == false:
+			corpo.play("Pulo")
+		if naMão != "Nada":
+			items.play(naMão +" - pulo")
+		else:
+			items.play("default")
+	
+	if caindo:
+		if genero == false:
+			corpo.play("Caindo")
+		if naMão != "Nada":
+			items.play(naMão +" - caindo")
+		else:
+			items.play("default")
+		queda = true
+	
 	if andando and not sinalAtaque:
 		queda = null
 		if genero == false:
@@ -109,23 +135,3 @@ func atualizar_animacão():
 			items.play(naMão +" - parado")
 		else: 
 			items.play("default")
-	
-	if noAr: ## Pulo e queda
-		if velocity.y < 0:
-			if genero == false:
-				corpo.play("Pulo")
-			if naMão != "Nada":
-				items.play(naMão +" - pulo")
-			else:
-				items.play("default")
-		else:
-			if genero == false:
-				corpo.play("Caindo")
-			if naMão != "Nada":
-				items.play(naMão +" - caindo")
-			else:
-				items.play("default")
-			if velocity.y <0:
-				return
-			queda = true
-	
